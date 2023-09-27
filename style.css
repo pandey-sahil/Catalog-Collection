@@ -1,0 +1,190 @@
+@font-face {
+  font-family: a;
+  src: url(./64a2b5e92874e4083615a378_Moderat-Extended-Light.woff2);
+}
+
+@font-face {
+  font-family: b;
+  src: url(./b.woff2);
+}
+
+@font-face {
+  font-family: c;
+  src: url(./c.woff2);
+}
+
+@font-face {
+  font-family: d;
+  src: url(./d.woff2);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: d;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+#page1 {
+  position: relative;
+  width: 100vw;
+}
+
+#nav {
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: 99;
+  background-color: white;
+  /* background-color: sandybrown; */
+  display: flex;
+  align-items: center;
+  padding: 2vw;
+  justify-content: space-between;
+}
+
+#nav svg {
+  font-family: gilroy;
+  text-transform: uppercase;
+  height: 4vw;
+  /* scale: 0;
+
+  opacity: 0; */
+}
+
+#nav h1 {
+  font-family: a;
+  text-transform: uppercase;
+  /* height: 4vw; */
+  scale: 0;
+  font-size: 1.2vw;
+  opacity: 0;
+}
+
+#text {
+  height: 100vh;
+  width: 100vw;
+  overflow: auto;
+  position: relative;
+}
+
+#text::-webkit-scrollbar {
+  display: none;
+}
+
+#text {
+  font-size: 30vw;
+  font-family: d;
+  font-weight: 300;
+  padding-left: 10vw;
+  /* flex-wrap: nowrap; */
+  flex-shrink: 0;
+  overflow-y: hidden;
+  overflow-x: auto;
+}
+
+#text svg {
+  /* transition: all linear 5s; */
+  transform: translateX(0%);
+}
+
+.scroller {
+  overflow: hidden;
+  position: absolute;
+  top: 60px;
+}
+
+.scroll {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  padding: 1vw 2vw;
+  justify-content: center;
+}
+
+#part2 {
+  justify-content: end;
+}
+
+#part3 {
+  justify-content: start;
+}
+
+.scroll img {
+  height: 90%;
+  width: 30%;
+}
+
+#page2 {
+  height: 150vh;
+  width: 100vw;
+  /* margin-top: 10vw; */
+  /* background-color: rgb(182, 49, 49); */
+  flex-direction: column;
+  z-index: 999;
+  overflow: hidden;
+  padding: 2vw;
+  position: relative;
+}
+
+#page2 #pg2txt {
+  /* background-color: seagreen; */
+  text-align: center;
+  line-height: 1;
+
+}
+
+#pg2txt h1 {
+  font-size: 8vw;
+  font-weight: 400;
+}
+
+#pg2txt h2 {
+  font-size: 6.5vw;
+  margin-top: -1vw;
+  font-weight: 400;
+  font-family: c;
+  line-height: normal;
+}
+
+#pg2txt h3 {
+  font-size: 2.8vw;
+  font-weight: 400;
+  font-family: d;
+  margin-top: 1vw;
+}
+
+#page2-scroller {
+  background-color: rgb(130, 60, 60);
+  display: flex;
+  gap: 1vw;
+  flex-shrink: 0;
+  overflow-x: auto;
+  margin-top: 5vw;
+  overflow-y: hidden;
+  height: 60vh;
+}
+#page2-scroller::-webkit-scrollbar{
+  display: none;
+}
+.cakes{
+  flex-shrink: 0;
+  overflow: hidden;
+  height: 100%;
+  width: 22vw;
+}
+.cakes img{
+  width: 100%;
+  transition: all ease .5s;
+  height: 100%;
+}
+.cakes img:hover{
+  scale:1.2;
+}
