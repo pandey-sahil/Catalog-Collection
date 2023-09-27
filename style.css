@@ -90,7 +90,6 @@ body {
 }
 
 #text svg {
-  /* transition: all linear 5s; */
   transform: translateX(0%);
 }
 
@@ -118,15 +117,13 @@ body {
 }
 
 .scroll img {
-  height: 90%;
+  height: 85%;
   width: 30%;
 }
 
 #page2 {
   height: 150vh;
   width: 100vw;
-  /* margin-top: 10vw; */
-  /* background-color: rgb(182, 49, 49); */
   flex-direction: column;
   z-index: 999;
   overflow: hidden;
